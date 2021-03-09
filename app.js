@@ -1,7 +1,6 @@
 const darkMode = document.querySelector("#darkMode");
 let toggle = false;
 
-//WE need to click on the sun
 //darkMode.addEventListener("mouseover", () => {
 darkMode.addEventListener("mouseover", () => {
   //We need to use anime.js
@@ -17,7 +16,6 @@ darkMode.addEventListener("mouseover", () => {
       targets: ".text",
       color: "rgb(255,0,0)",
       backgroundColor: "rgb(0,0,0)",
-      // d: [{ value: moonPath }],
     })
 
     .add(
@@ -89,7 +87,6 @@ outside.addEventListener("mouseover", () => {
       targets: ".text",
       color: "rgb(0,0,0)",
       backgroundColor: "rgb(245,245,245)",
-      // d: [{ value: moonPath }],
     })
     .add(
       {
@@ -154,5 +151,4 @@ outside.addEventListener("mouseover", () => {
       "-=800"
     );
 
-  //Everytime we click on the sun i want the toggle to switch
 });
